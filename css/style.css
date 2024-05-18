@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(46, 45, 45);
+    height: 3rem;
+    position: sticky;
+}
+
+header{
+  
+    height: 120vh;
+    width: 100%;
+    background-size: cover;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:linear-gradient(blanchedalmond,rgb(236, 218, 189));
+    background-clip: url('../img/circle-xxl.png');
+    padding-bottom: 12rem;
+}
+
+h1{
+    text-align: center;
+    color:black;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    font-weight: 1000;
+}
+
+button{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: white;
+   
+    font-weight: 700;
+}
+
+p{
+    text-align: center;
+    font-size: "Urbanist", sans-serif;
+    color:black;
+    font-size:20px;
+    margin: 1.4rem;
+    line-height: 1.7rem;
+}
+
+.mock-ups{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-top: rem;
+}
+
+.text-center{
+    text-align: center;
+    margin-top: 4rem;
+    font-style: normal;
+   
+}
+
+.main{
+   
+}
+
+.p{
+    color: rgb(173, 192, 230);
+}
+
+.hero{
+    margin-top: 1rem;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.dd{
+    color: lightgray;
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+}
+
+.checkbtn{
+    font-size: 20px;
+    float: right;
+    height: fit-content;
+    width: fit-content;
+    margin-right: 60px;
+    cursor: pointer;
+    display:none;
+    margin-top: 1rem;
+   
+}
+.logo{
+  color:white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+ 
+}
+
+.domain-entry-container{
+    width: 90%;
+    border: 1px solid blanchedalmond;
+    margin: auto;
+    padding-top: 1rem;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.main{
+  
+}
+
+.domain-entry{
+    display: grid;
+    grid-template-rows:1fr 1fr ;
+    width:90%;
+    margin: auto;
+}
+
+input[type="text"]/* ,[value="Search Domain"] */{
+    height: 4rem;
+    background-color: rgb(232, 237, 242);
+    border: none;
+    text-indent: 1rem;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[value="Search Domain"] {
+    height: 4rem;
+   background-color:blanchedalmond;
+   font-size: 18px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 600;
+   border: none;
+
+}
+
+.prices{
+   /*  display: grid;
+    grid-template-columns: 3fr 2fr; */
+ 
+}
+
+::placeholder{
+   
+    font-size: 17px;
+}
+#check{
+    display:none;
+}
+
+/*services*/
+.services{
+    margin-top: 9rem;
+}
+
+h2{
+    margin-top: 1rem;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.sub-service{
+    margin-top: 4rem;
+}
+
+/*prices*/
+.pricing{
+    margin-top: 9rem;
+
+}
+.pricing-cards{
+    background-color:blanchedalmond;
+    width:90%;
+    padding: 1REM;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.btn{
+    background-color: white;
+    padding: 1.5rem;
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin: auto;
+    border-radius: 3rem;
+}
+
+ h3 ,span{
+    margin-top: 1rem;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+}
+span{
+    color: lightgray;
+}
+
+/*backgrund*/
+.background{
+    width: 100%;
+    margin-top: 4rem;
+    background-image: url('../img/my\ web.jpg');
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:linear-gradient(blanchedalmond,rgb(236, 218, 189));
+  opacity: 0.9;
+  text-align: center;
+  color: black;
+}
+.facts h1 {
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 100;
+    margin-top: 4rem;
+    font-size: 40px;
+    color: black;
+}
+.ff{
+    
+        margin-top: 1rem;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 100;
+        text-align: center;
+        font-size: 17px;
+        color: black;
+}
+
+.text{
+
+}
+
+/*cards-profile*/
+.card-profiles{
+   display: flex;
+    gap: 30px;
+   scroll-snap-type: y mandatory;
+    overflow: scroll; 
+    scroll-padding: 50px;
+    padding: 30px;
+}
+
+.card-project1,.card-project2,.card-project3,.card-project4{
+     background-color: blue;
+    width: 90%;
+    margin: auto;
+    background-color:blanchedalmond;
+    color: #000;
+    border-radius: 0rem;
+    flex: 0 0 100%;
+    scroll-snap-align:start; 
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+
+.pf{
+
+margin-top: -4rem;
+}
+
+.ddd{
+    color: black;
+    margin-top: 4rem;
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  line-height: 2rem;
+}
+.name{
+    color:grey;
+    margin-top: 4rem;
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+}
+
+.next-btn{
+    background-color: blanchedalmond;
+    max-width: 90%;
+    margin: auto;
+    padding: 1.4rem;
+    text-align: center;
+    border-radius: 2rem;
+    color: rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-cts{
+    margin-top: 4rem;
+    column-gap: 7rem;
+   display: block;
+}
+ .Perform-btn{
+    background-color: white;
+    max-width: 90%;
+    margin: auto;
+    padding: 1.4rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    text-align: left;
+    border: 1px solid blanchedalmond;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.effect-btn{
+    background-color: white;
+    max-width: 90%;
+    margin: auto;
+    padding: 1.4rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    border: 1px solid blanchedalmond;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+.img{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.next-gen-vps{
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+h4{
+    font-size: 17px;
+}
+.pd{
+    color: lightgray;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+
+.head{
+    margin-top: 1rem;
+    font-family: "Urbanist", sans-serif;
+    font-weight:500;
+    font-size: 25px;
+}
+
+
+.news-letter{
+    height: 100vh;
+    width: 100%;
+    margin-top: 4rem;
+    background-size: cover;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:linear-gradient( to left, blanchedalmond, rgb(236, 218, 189));
+    background-clip: url('../img/circle-xxl.png');
+    padding-bottom: 12rem;
+}
+
+.subscription,h1 {
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 100;
+    margin-top: 4rem;
+    font-size: 40px;
+    color: black;
+}
+
+.ed{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 1rem;
+}
+.email-sub input{
+    width: 80%;
+    background:none;
+    border-radius: 2rem;
+    border: 1px solid white;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    margin-top: 3rem;
+}
+
+.email-sub ::placeholder{
+    color: white;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.email-sub :hover{
+    border: 1px solid white;
+}
+
+.blog-cards {
+    width: 100%;
+    height: 100vh;
+}
+
+.blogs{
+    background-color: antiquewhite;
+    width: 90%;
+    margin: auto;
+    height: 120vh;
+    background-color: white;
+    box-shadow: 0 0 14px;
+    color:lightgrey;
+    margin-top: 3rem;
+   
+}
+
+.blogs-pic{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.date{
+    color: grey;
+    font-family: "Urbanist", sans-serif;
+    width: 90%;
+    margin: auto;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.e-m{
+    width: 15px;
+    filter:contrast(0);
+   z-index: -100;
+  
+}
+
+.text-card{
+    font-size: 22px;
+    color: rgb(48, 48, 48);
+    font-family: "Urbanist", sans-serif;
+    margin-top: 2rem;
+}
+.text-cards {
+    font-size: 16px;
+    color: rgb(48, 48, 48);
+    font-family: "Urbanist", sans-serif;
+    margin-top: 2rem;
+}
+
+
+
+footer{
+    background-color: blanchedalmond;
+    position: absolute;
+    width: 100%;
+    margin-top: 95rem;
+    padding-top: 9rem;
+    z-index: -1;
+}
+.foter{
+    width: 90%;
+    margin: auto;
+}
+
+.raptor,.link-header{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+   
+}
+
+body,.tag,.background,.e-m{
+    z-index: -1;
+}
+
+.card-profiles .pf{
+    z-index:-1 ;
+}
+
+.bb{
+   margin-top: 2rem;
+}
+
+.link-header{
+    margin-top: 4rem;
+    font-weight: 500;
+ 
+}
+
+.ol-list ol a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2rem;
+}
+
+.ol{
+    margin-top: 2rem;
+}
+
+.icons{
+   margin-top: 0.5rem;
+   display: block;
+}
+
+.contacts{
+   display: grid;
+   grid-template-columns:3rem auto;
+   margin-top: 2rem;
+  
+}
+
+.contacts-text{
+    color: rgb(38, 37, 37);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.social-links{
+    filter: invert(-333);
+    display: block;
+   margin-top: 3rem;
+    gap: 2rem;
+    display: flex;
+    margin-left: 2rem;
+}
+
+@media (max-width:900px){
+.checkbtn{
+    display: block;
+   }
+
+   ul{
+   position:fixed;
+   height: 100vh;
+   z-index: 1;
+   width: 70% ;
+   max-width: 300px;
+   background-color: rgb(46, 45, 45);
+  
+    left: -100%;
+    right:50%;
+   top: 0;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border: 1px solid black;
+    text-align:start;
+    font-family: 'Epilogue', sans-serif;
+    transition: all 0.9s ;
+   }
+
+  
+
+   nav ul li {
+       display:block;
+       margin: 35px 0px;
+       line-height: 3px;
+       font-family: "Barlow", sans-serif;
+       font-size: 16px;
+       color: black;
+       
+   }   
+   nav ul li a{
+       font-size:16px;
+       text-decoration: none;
+       margin-left: 1.5rem; 
+       color:white;
+       line-height: 1rem;
+       font-weight: 700px;
+   }
+
+ 
+   .get{
+    width: 80%;
+    margin: auto;
+    background-color: aqua;
+    padding: 1rem;
+    background: none;
+    border-radius: 1rem;
+    border: 1px solid white;
+   }
+   #check:checked ~ ul{
+       left: 0;
+   }
+   .tag{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    position: relative;
+    width: 30%;
+    margin: auto;
+    padding: 0.5rem;
+    margin-top: -1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+}
